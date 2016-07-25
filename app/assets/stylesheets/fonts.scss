@@ -1,21 +1,32 @@
 @font-face {
-  font-family: 'montserrat';
+    font-family: 'montserrathairline';
+    src: url(asset_path('montserrat-hairline-webfont.woff2')) format('woff2'),
+         url(asset_path('montserrat-hairline-webfont.woff')) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserrat-light';
   src: url(asset_path('montserrat-light-webfont.woff2')) format('woff2'), url(asset_path('montserrat-light-webfont.woff')) format('woff');
-  font-weight: thin;
+  font-weight: normal;
   font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'montserrat';
+  font-family: 'montserrat-regular';
   src: url(asset_path('montserrat-regular-webfont.woff2')) format('woff2'), url(asset_path('montserrat-regular-webfont.woff')) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 html, body {
-  font-family: 'montserrat';
-  h1,h2,h3,h4,h5,h6 {
-    font-weight: 200;
-  }
+  font-family: 'montserrat-regular';
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'montserrathairline';
+  // font-weight: 200;
 }
