@@ -23,15 +23,25 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $black;
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 100ms cubic-bezier(.16, .68, .43, .99);
+    -moz-transition: -moz-transform 100ms cubic-bezier(.16, .68, .43, .99);
+    -o-transition: -o-transform 100ms cubic-bezier(.16, .68, .43, .99);
+    transition: transform 100ms cubic-bezier(.16, .68, .43, .99);
+  }
   &:hover {
+    color: $white;
     &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.05);
+      transform: scale(1, 1);
     }
   }
   &.small {
@@ -41,3 +51,5 @@
     width: 100%;
   }
 }
+
+@hover-color: #22bad1;
