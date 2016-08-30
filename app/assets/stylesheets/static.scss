@@ -50,3 +50,37 @@ body {
   margin-left: -25px;
   z-index: 1;
 }
+
+
+.hidden-hero-area {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  transform: scale(0,0);
+  transition: transform 100ms ease-in;
+  &.reveal {
+    transform: scale(1,1);
+  }
+  color: #fff;
+  text-align: center;
+  overflow: scroll;
+}
+
+#grid[data-columns]::before {
+  content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of3 {
+  width: 33.333%;
+  padding: 2px;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+  }
+}

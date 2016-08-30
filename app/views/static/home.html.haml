@@ -1,7 +1,21 @@
-.hero-area#snow
+.hero-area
   %h1.hero-title EDEN AND CODY ARE GETTING MARRIED
 
   = link_to "RSVP NOW", "http://goo.gl/forms/i4Pnd9siP4EUbYS23", class: 'btn rsvp', target: "_blank"
-  %h2.hero-subtitle More details to come...
+  = link_to "CONTINUE", "#", class: 'btn rsvp continue-btn'
+
+  -# %h2.hero-subtitle More details to come...
 
 = image_tag('couple.svg', class: 'couple')
+
+.hidden-hero-area
+  %h1 EDEN & CODY
+
+
+  #grid{"data-columns" => ""}
+    - %w(1 2 10 11 15 17 18 20 21 22 23 24 25 26 28 29 30 35 37 39 40 41 44 45 47 54 55 57 58 62 63 64 65 66 69 70 71 72 73 74 75 78).each do |i|
+      = image_tag("#{i}.jpg")
+
+
+
+= javascript_include_tag "salvattore"
