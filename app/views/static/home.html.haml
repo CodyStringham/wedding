@@ -4,7 +4,11 @@
   = link_to "RSVP NOW", "http://goo.gl/forms/i4Pnd9siP4EUbYS23", class: 'btn rsvp', target: "_blank"
   = link_to "CONTINUE", "#", class: 'btn rsvp continue-btn'
 
-  -# %h2.hero-subtitle More details to come...
+  %h2.hero-subtitle
+    %span Registered at
+    = link_to 'Target', 'https://www-secure.target.com/gift-registry/giftgiver?registryId=3C_-HILGRGRYAkHjy5dCHQ#1', class: 'register-link', target: '_blank'
+    and
+    = link_to 'Crate&Barrel', 'http://www.crateandbarrel.com/gift-registry/eden-hibbert-and-cody-stringham/r5554222', class: 'register-link', target: '_blank'
 
 = image_tag('couple.svg', class: 'couple')
 

@@ -42,6 +42,16 @@ body {
   }
 }
 
+.register-link {
+  color: #46AFF0;
+  transition: color 200ms ease-in;
+  font-weight: bold;
+  padding-bottom: 5px;
+  &:hover {
+    color: #327FB1;
+  }
+}
+
 .couple {
   max-width: 50px;
   position: absolute;
